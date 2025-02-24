@@ -1,0 +1,60 @@
+/* Base Styles */
+body {
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: Arial, sans-serif;
+}
+
+/* Sunny Theme */
+body[data-theme="sunny"] {
+  background: linear-gradient(135deg, #ffeb3b, #ff9800);
+  color: #222;
+}
+
+/* Rainy Theme */
+body[data-theme="rainy"] {
+  background: linear-gradient(135deg, #37474f, #263238);
+  color: #cfd8dc;
+}
+
+/* input[data-theme="rainy"] {
+  background-color: #263238;
+  color: white;
+} */
+
+/* Snowy Theme */
+body[data-theme="snowy"] {
+  background: linear-gradient(135deg, #e3f2fd, #90caf9);
+  color: #1e3a5f;
+}
+
+/* Night Theme */
+body[data-theme="night"] {
+  background: linear-gradient(135deg, #1c1c1c, #424242);
+  color: #f5f5f5;
+}
+
+/* input[data-theme="night"] {
+  background-color: #9999996e;
+  color: white;
+} */
+
+/* Navbar */
+nav {
+  background: rgb(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Inputs */
+
+select {
+  background: rgb(241, 232, 232);
+  color: #333;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+
+
+
