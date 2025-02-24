@@ -2,8 +2,10 @@ import React from "react";
 import SearchBar from "../components/SearchBar/SearchBar";
 import { Link } from "react-router-dom";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
+// import { ThemeContext } from "../ThemeContext"; // Import ThemeContext
 
 function Home() {
+  // const { theme, unit } = useContext(ThemeContext); // Access global theme and unit
   return (
     <div className="container lg:px-32 p-6 min-h-screen">
       {/* Navigation */}

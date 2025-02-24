@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
+import { ThemeContext } from "../ThemeContext"; // Import ThemeContext
 
 const themes = ["Default", "Sunny", "Rainy", "Snowy", "Night"];
 const units = ["Celsius", "Fahrenheit"];
 
 function Settings() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "Sunny");
-  const [unit, setUnit] = useState(localStorage.getItem("unit") || "Celsius");
-
-  // Apply the theme when it changes
-  useEffect(() => {
-    document.body.setAttribute("data-theme", theme.toLowerCase()); // Apply theme to body
-  }, [theme]);
-
-  const saveSettings = () => {
-    localStorage.setItem("theme", theme);
-    localStorage.setItem("unit", unit);
-    window.alert("Settings Saved ✅");
-  };
+  const { theme, setTheme, unit, setUnit } = useContext(ThemeContext); // Access global settings
 
   return (
     <div className="container lg:px-32 p-6">
@@ -56,11 +45,6 @@ function Settings() {
           ))}
         </select>
       </div>
-
-      {/* Save Button */}
-      <button onClick={saveSettings} className="cursor-pointer bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
-        Save Settings
-      </button>
     </div>
   );
 }
