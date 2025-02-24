@@ -40,6 +40,22 @@ body[data-theme="night"] input {
   border: 1px solid #888;
 }
 
+body[data-theme="night"] .icon {
+  color: white;
+}
+
+body[data-theme="night"] .temp {
+  color: rgb(135, 202, 214);
+}
+
+body[data-theme="night"] .city-name {
+  color: rgb(39, 146, 165);
+}
+body[data-theme="night"] .weather-detail h2,
+body[data-theme="night"] .weather-detail p,
+body[data-theme="night"] .weather-detail div {
+  color: white;
+}
 /* Navbar */
 nav {
   background: rgb(0, 0, 0, 0.1);

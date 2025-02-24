@@ -2,6 +2,7 @@ import React from "react";
 import SearchBar from "../components/SearchBar/SearchBar";
 import { Link } from "react-router-dom";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
+import Weather from "../components/Weather/Weather";
 // import { ThemeContext } from "../ThemeContext"; // Import ThemeContext
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       {/* Search Bar */}
       <div className="mt-8">
         <SearchBar />
+        <Weather/>
       </div>
     </div>
   );
