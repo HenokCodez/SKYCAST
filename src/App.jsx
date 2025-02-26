@@ -5,12 +5,10 @@ import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/settings" element={<Settings />} />
+    </Routes>
   );
 }
 
