@@ -13,7 +13,7 @@ function Settings() {
     <div className="container lg:px-32 p-6">
       {/* Navigation */}
       <nav className="w-full flex justify-between items-center mb-6">
-        <img src="/logo.png" alt="logo" className="h-10" />
+        <img src="/SKYCAST/logo.png" alt="logo" className="h-10" />
         <Link to="/">
           <HomeIcon sx={{ fontSize: 40, color: "blue" }} />
         </Link>
