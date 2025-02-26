@@ -5,7 +5,7 @@ import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <Router basename="/SKYCAST/">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/settings" element={<Settings />} />
